@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:context=".LoginActivity">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="This can be used to insert your logo"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Masukkan No. HP Anda"
+            android:textColor="#0288D1"
+            android:textSize="18sp" />
+
+
+    <LinearLayout
+            android:id="@+id/layoutPhone"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+        <TextView
+                android:id="@+id/textCall"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="+62"
+                android:textColor="#dedfe0"
+                android:layout_marginStart="2dp" />
+
+        <EditText
+                android:id="@+id/etLoginPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:inputType="phone"
+                android:focusableInTouchMode="true"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:maxLength="14"
+                android:textColorHint="#dedfe0"
+                android:textSize="14sp"
+                tools:ignore="Autofill,LabelFor" />
+
+    </LinearLayout>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSubmitPhoneNumber"
+            android:layout_margin="10dp"
+            android:textAllCaps="true"
+            android:background="@drawable/cs_button_green"
+            android:text="Minta SMS Pin"
+            android:textColor="#ffffff"/>
+
+</LinearLayout>
